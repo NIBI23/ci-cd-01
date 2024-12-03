@@ -1,9 +1,9 @@
 pipeline {
     agent any 
     stages {
-        stage ( "git checkout") {
+        stage('Git Checkout') {
             steps {
-                https://github.com/NIBI23/ci-cd-01.git
+                git branch: 'main', url: 'https://github.com/NIBI23/ci-cd-01.git'
             }
         }
     }
